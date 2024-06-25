@@ -714,46 +714,6 @@ Let $\pa{\mm^n, g, f, \lambda}$ be an almost Ricci soliton with $n \geq 4$ and $
 
 
 
-\section{$\rho$-Einstein gradient Ricci solitons}
-
-As a straighforward application of the previous theorems, we can also determine (via ODE's) the warping functions of $\rho$-Einstein gradient Ricci solitons. 
-Recall that $(\mm, g, f)$ is said to be a $\rho$-Einstein gradient Ricci soliton when there exist constants $\rho, \mu \in \mathbb{R}$ such that 
-\[ 
-\Ric + \na^2 f  = \pa{\rho R + \mu}g
-\]
-
-\begin{teorema}[Local warped product structure]\label{LocalStrucRhoEinstein}
-	Let $\pa{\mm^n, g, f}$ be a $\rho$-Einstein gradient Ricci soliton. Assume the soliton has harmonic Weyl curvature and that its Ricci tensor has exactly two distinct eigenvalues. Then for any point $p\in\mathcal{R}\cap \mm_{\mathcal{A}}$ there are a neighborhood $U\subset\mathcal{R}\cap \mm_{\mathcal{A}}$ of $p$ and a warped product $I \times_{h} \nn$ of an interval and an Einstein manifold $\nn^{n-1}$ so that $U$ is isometric to a domain of $I \times_{h} \nn$. Furthermore, if $\rho \neq \frac{1}{n-1}$, then \textcolor{black}{$h$ is an affine function} and $f$ is constant on $\nn$, through the identification between $I \times \nn$ and $U$.
-\end{teorema}
-
-\begin{demm}
-	Since $\mm$ is, in particular, a gradient almost Ricci soliton with
-	\begin{align*}
-		\lambda &= \rho R + \mu \\
-		&= -2(n-1)\rho \frac{h''}{h} + \rho (n-1) \frac{\lambda_{\nn}}{h^2} - \rho (n-1)(n-2) \frac{(h')^2}{h^2} + \mu
-	\end{align*}
-	the first equation of \cref{SistemaSimples} can be written as 
-	\[
-	-f' \frac{h'}{h} + \pa{1 - 2 (n-1) \rho}  \frac{h''}{h} + \pa{\rho(n-1) - 1} \frac{\lambda_{\nn}}{h^2} + \pa{-\rho(n-1) + 1} (n-2) \frac{(h')^2}{h^2} + \mu = 0,
-	\]
-	or, equivalently,
-	\begin{equation}\label{FirstSistemaSimples}
-	\pa{1-2\rho(n-1)} h h'' + \pa{\rho(n-1) - 1} \lambda_{\nn} - (n-2)\pa{\rho(n-1) -1} \pa{h'}^2 - f' h h' + \mu h^2 = 0.
-	\end{equation}
-	Now, from \cref{eqXiRelFuncWarp}, we have
-	\begin{align*}
-		- f' h h' &= \pa{\underbrace{\lambda_2}_{=\frac{R}{n-1} + \frac{h''}{h}} - \lambda} h^2 \\
-		&= \pa{\frac{R}{n-1} + \frac{h''}{h} - \rho R - \mu} h^2 \\
-		&= \pa{\frac{1}{n-1} - \rho} \pa{-2 h h'' + (n-1) \lambda_{\nn} - (n-1)(n-2) \pa{h'}^2} - \mu h^2 + h h'' \\
-		% &=  \pa{\frac{2 \rho(n-1) + n - 3}{n-1}} h h''+ \pa{1 - \rho(n-1)} \lambda_{\nn} - (n-2) \pa{h'}^2 + \rho (n-1) (n-2) \pa{h'}^2 - \mu h^2 \\
-		&= \pa{2\rho + \frac{n-3}{n-1}} h h''+ \pa{1 - \rho(n-1)} \lambda_{\nn} - (n-2) \pa{h'}^2 + \rho (n-1) (n-2) \pa{h'}^2 - \mu h^2
-	\end{align*}
-	This together with equation \cref{FirstSistemaSimples} implies 
-    \[
-    \pa{n-2}\pa{1 - \rho \pa{n-1}} h h'' = 0
-    \]
-	\end{demm}
-
 
 
 
