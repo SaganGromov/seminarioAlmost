@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1719291541.7949 "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/seminarioAlmost.tex" "seminarioAlmost.pdf" "seminarioAlmost" 1719291543.0486 0
+["pdflatex"] 1719292080.65482 "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/seminarioAlmost.tex" "seminarioAlmost.pdf" "seminarioAlmost" 1719292081.9066 0
   "C:/Users/mathe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1719286481 83282 621ebaed9bd86f6f3d021276677be3b2 ""
   "C:/Users/mathe/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1715234486 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/mathe/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1715234487 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -240,15 +240,15 @@
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "blowup.png" 1719190683 25638 fa7bec91c28f24492e110970e54cd3d2 ""
-  "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/seminarioAlmost.tex" 1719291541 64002 ae5a2ff309dcb38dc7df9cc50093cebb ""
+  "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/seminarioAlmost.tex" 1719292080 64313 7f3c68b37eea6aa645078c6becc3614e ""
   "capaSeminario.pdf" 1719286742 231107 727bbaeac5548cb8ae51662bb2b26eda ""
   "ccirurgia.png" 1719190686 17441 6fe068b49ea544e6a16778f1d40b0e2c ""
   "nneck.png" 1719190675 33252 6af9c20bbf43f8f2b6cb6dfe22ce9a77 ""
   "notation.tex" 1719285114 1443 2976bb1dc7d25902b4ed4dec1acb6342 ""
   "preamble.tex" 1719290446 9717 bf4ff0c31a5c870d6bb9cb0b197ea50c ""
-  "seminarioAlmost.aux" 1719291542 10180 3c96cfb51a3312569857b1256eee2e59 "pdflatex"
-  "seminarioAlmost.out" 1719291542 1140 77d08613ec4270e8bc33dd0108bb4b83 "pdflatex"
-  "seminarioAlmost.tex" 1719291541 64002 ae5a2ff309dcb38dc7df9cc50093cebb ""
+  "seminarioAlmost.aux" 1719292081 10234 6dab5e078ed0f1fb17e28972316c7e8e "pdflatex"
+  "seminarioAlmost.out" 1719292081 1140 77d08613ec4270e8bc33dd0108bb4b83 "pdflatex"
+  "seminarioAlmost.tex" 1719292080 64313 7f3c68b37eea6aa645078c6becc3614e ""
   (generated)
   "seminarioAlmost.aux"
   "seminarioAlmost.log"
