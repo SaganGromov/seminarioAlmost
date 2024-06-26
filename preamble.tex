@@ -301,3 +301,12 @@
 \usepackage[final]{pdfpages}
 
 \definecolor{MH}{RGB}{0, 0, 0}
+\newtheorem{thm}{Theorem}[section] 
+\newcommand{\thistheoremname}{}
+\newtheorem{genericthm}[thm]{\thistheoremname}
+\newenvironment{namedthm}[1]
+  {\renewcommand{\thistheoremname}{#1}%
+   \begin{genericthm}}
+  {\end{genericthm}}
+
+  \newcommand{\MH}[1]{\color{MH}{#1}\color{black}}

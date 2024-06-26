@@ -141,6 +141,10 @@ onde $Q_{jk}$ denota uma soma de termos que contém componentes de $g^{-1}$, e d
         Os sólitons de Ricci aparecem como limites do processo que delineamos informalmente na figura acima (cuja formalização pode ser encontrada em \mycitep{HamRicciFlow} ou \mycitep{topping}). Além disso, uma vez que sólitons (que definiremos em breve) são, de certa forma, soluções estacionárias do fluxo, os mesmos \quotes{nascem} como uma grande obstrução inicial ao plano que esboçamos na \cref{provaPerelman}, se tornando assim importantes objetos de estudo.  
         \end{oobs}
 
+        \begin{oobs}
+        A conjectura da geometrização de Thurston está relacionada à física, no problema de determinar a topologia do Universo. Mais detalhes podem ser encontrados em \mycitep{passeio}.
+        \end{oobs}
+
 
 
   \section{Sólitons de Ricci}
@@ -170,7 +174,7 @@ onde $Q_{jk}$ denota uma soma de termos que contém componentes de $g^{-1}$, e d
   \end{proposicao}
 
   \begin{demm}
-    Consule \mycitep{MinhaDissertacao}.
+    Consulte \mycitep{MinhaDissertacao}.
   \end{demm}
 
 
@@ -185,7 +189,6 @@ onde $Q_{jk}$ denota uma soma de termos que contém componentes de $g^{-1}$, e d
       \begin{equation}\label{GradSoliton}
       \Ric + \nabla^2 f = \lambda g
       \end{equation}
-      Motivados por tal equação, temos também a seguinte
       \end{oobs}
       
 
@@ -270,7 +273,7 @@ Let $\mathcal{A}$ be a codazzi tensor and denote by $E_{\mathcal{A}}(x)$ the num
 \begin{align}
 	\mm_{\mathcal{A}}=\{x\in \mm \ |  \ E_{\mathcal{A}}(x)\text{ is constant in a neighborhood of }x\}.
 \end{align}
-It turns out that in $\mm_{\mathcal{A}}$ the eigenvalues of $\mathcal{A}$ are well defined and define smooth functions $\lambda_{1},\ldots,\lambda_{n}:\mm_{\mathcal{A}}\rightarrow\mathbb{R}$. Furthermore, he proved that in such a set the following is true
+It turns out (for details, see \mycitep{DensoOverflow}) that in $\mm_{\mathcal{A}}$ the eigenvalues of $\mathcal{A}$ are well defined and define smooth functions \[\lambda_{1},\ldots,\lambda_{n}:\mm_{\mathcal{A}}\to\mathbb{R}.\] Furthermore, he proved that in such a set the following is true
 %{\color{red}Enunciar o lema abaixo pra campos gerais nas auto-dstribuições.}
 \begin{lema}[Derdzi\'{n}ski]\label{derdlema}
 	Let $(\mm^n,g)$, $n\geq4$, be a Riemannian metric with harmonic Weyl curvature. Let $\{E_{i}\}_{i=1}^{n}$ be a local orthonormal frame such that $\Ric(E_{i},\cdot)=\lambda_{i}g(E_{i},\cdot)$. Then,
@@ -527,6 +530,15 @@ From now on we use the convention that $2\leq a,b,c,\ldots,\alpha,\beta,\gamma,\
         \lambda_{\alpha} - \lambda_{\beta} = f' \left(\frac{h_{\alpha}'}{h_{\alpha}}  - \frac{h_{\beta}'}{h_{\beta}} \right)
         \] 
         \end{demm}
+        \begin{oobs}
+            The previous theorem can be compared to Garcia-Rio's result, namely,
+
+            \begin{teorema}
+                Suppose a multiply warped product $\mm = \mathcal{I} \times_{h_1} \nn_1^{d_1} \times \cdots \times_{h_k} \nn_{k}^{d_k}$ with metric $g = g_{B} \oplus h_1^2 g_{\nn_1} \oplus \cdots \oplus h_{k}^2 g_{\nn_k}$ is locally conformally flat and also admits a structure of almost Ricci soliton with non constant $f$. Then $k \leq 3$ and each fiber (provdied that $\dim \nn_i \geq 2 \ \forall i$) has constant sectional curvature.
+            \end{teorema}
+        \end{oobs}
+
+
         
         When there is only a single fiber to be considered, the reciprocal of Theorem \cref{HarmImpliesEinstein} is the following:
         
@@ -711,7 +723,84 @@ Let $\pa{\mm^n, g, f, \lambda}$ be an almost Ricci soliton with $n \geq 4$ and $
 \end{demm}
 
 
+\section{Classification of gradient almost Ricci solitons with harmonic curvature}
+The case of harmonic curvature can be studied as a special case of harmonic Weyl curvature. Indeed, recall that in dimension $\geq 4$,
+\[
+\Munderbrace{\Rm \text{ is harmonic}}{\iff \nabla^{\ell} R_{ijk\ell} = 0} \iff \Munderbrace{W \text{ is harmonic }}{\iff \nabla^{\ell} W_{ijk \ell} = 0} \text{ and } R \text{ is constant} 
+\]
+In fact, this is a straightforward consequence of the decomposition
+\[
+\Rm = \frac{R}{n(n-1)} (g \KN g) + \frac{2}{n-2} (g \KN E) + W
+\]
+and the second Bianchi identity.  \par 
+With this characterization in mind, we can elaborate a bit further on the local structure given in the previous section.
 
+
+
+\begin{teorema}[Local multiply warped product structure of harmonic gradient almost solitons]\label{localstrucHarm}
+	Let $(\mm^{n \geq 4},g,f,\lambda)$ be a gradient almost Ricci soliton with harmonic Riemannian curvature and non-constant $f$. For any point $p\in\mathcal{R}\cap \mm_{\mathcal{A}}$ there is a neighborhood $U\subset\mathcal{R}\cap \mm_{\mathcal{A}}$ of $p$ in which $g$ is a multiply warped product with at most two Einstein fibers. More precisely, $U$ is isometric to a domain of one of the following manifolds
+	\begin{enumerate}[label=\color{blue}\normalfont\textbf{(\theenumi)}]
+		\item\label{simplesHarm} $I \times_{h} \nn^{n-1}$, where $\nn$ is an Einstein manifold. In this case, $h:I\to\mathbb{R}$ must solve the ODE
+		\[
+		h'' = \frac{ (n-1) \lambda_2 - \tau_{\mm}}{n-1} h 
+		\]
+		\item\label{triploHarm} $I\times_{h_{1}} \nn_{1}^{r_{1}}\times_{h_{2}} \nn_{2}^{r_{2}}$, where $\nn_1$ and $\nn_2$ are Einstein manifolds and $h_{1},h_{2}:I\rightarrow\mathbb{R}$ are smooth functions which satisfy both \cref{SistemaTriplo} and
+		\[
+			-   r_1 \frac{ (h_1)''}{h_1} - 2 r_2 \frac{(h_2)''}{h_2}  +  \frac{\tau_{\nn_2}}{(h_2)^2} - r_2 (r_2 - 1) \frac{(h_2')^2}{(h_2)^2} = -   r_2 \frac{(h_2)''}{h_2} - 2 r_1 \frac{(h_1)''}{h_1} + \frac{\tau_{\nn_1} }{(h_1)^2} - r_1 (r_1 - 1) \frac{(h_1')^2}{(h_1)^2} 	
+		\]
+	\end{enumerate}
+	 \MH{Furthermore, $I$ is the integral manifold of $\partial_{1}=\frac{\nabla f}{|\nabla f|}$ and $\lambda,\lambda_{1},\ldots,\lambda_{n},R$ and $|\nabla f|$ restricted to $U$ depend only on $x_{1}=s\in I$. \\}
+	 
+	 
+	 \MH{
+	 \begin{demm}
+	 Suppose $\Ric$ has exactly two eigenvalues and $\Rm$ is harmonic. Clearly, we are then in case \cref{simplesHarm}. Multiplying the last equation of \cref{SistemaSimples} by $(n-1)$ and using \cref{ScalWarped}, we obtain
+	 \[ \begin{cases}
+	 \tau_{\nn}\left(1 - \frac{\lambda_2}{\lambda_{\nn}} h^2\right) - (n-1) h h'' - (n-1)(n-2)(h')^2 = 0 \\
+	  \tau_{\nn} - 2(n-1)hh''- (n-1)(n-2)(h')^2 = \tau_{\mm} \cdot h^2 
+	 \end{cases}
+	 \]
+	 which, as desired, imply
+	 \[
+	 h'' = \frac{(\tau_{\nn} \frac{\lambda_2}{\lambda_{\nn}} - \tau_{\mm})}{n-1} h,
+	 \]
+	 where
+	 \[
+	\lambda_2 = \lambda - f' \frac{h'}{h}.
+	 \]
+	On the other hand, if $\Ric$ has three eigenvalues, in an entirely analogous manner, lemma \cref{warped} yields
+	\[
+		\begin{cases}
+			\begin{aligned}
+			&0 = -\tau_{\mm} (h_1)^2 -2 r_1 h_1 (h_1)''- 2 r_2 \frac{(h_2)''}{h_2} (h_1)^2  +  \tau_{\nn_1} + \tau_{\nn_2} \frac{(h_1)^2}{(h_2)^2} \\
+			 &- r_1 (r_1 - 1)(h_1')^2 - r_2 (r_2 - 1) \frac{(h_2')^2}{(h_2)^2} (h_1)^2 - r_1 r_2 h_1 h_1' \frac{h_2'}{h_2}\\
+			\end{aligned} \vspace{0.3cm} \\
+			0 = -\tau_{\nn_1}\left(1 - \frac{\lambda_2}{\lambda_{\nn_1} }  (h_1)^2 \right) + r_1 h_1 h_1 '' + r_1 (r_1 - 1) (h_1')^2 + r_1 r_2 h_1 h_1' \frac{h_2'}{h_2} 
+			\end{cases}
+	\]
+	which implies
+	\[
+		\tau_{\mm} =  -   r_1 \frac{ (h_1)''}{h_1} - 2 r_2 \frac{(h_2)''}{h_2}  +  \frac{\tau_{\nn_2}}{(h_2)^2} - r_2 (r_2 - 1) \frac{(h_2')^2}{(h_2)^2} 
+	\]
+	Similarly, from
+	\[
+		\begin{cases}
+			\begin{aligned}
+			&0 = -\tau_{\mm} (h_2)^2 -2 r_1 h_1 (h_1)''- 2 r_2 \frac{(h_2)''}{h_2} (h_1)^2  +  \tau_{\nn_1} + \tau_{\nn_2} \frac{(h_1)^2}{(h_2)^2} \\
+			 &- r_1 (r_1 - 1)(h_1')^2 - r_2 (r_2 - 1) \frac{(h_2')^2}{(h_2)^2} (h_1)^2 - r_1 r_2 h_1 h_1' \frac{h_2'}{h_2}\\
+			\end{aligned} \vspace{0.3cm} \\
+			0 = -\tau_{\nn_2}\left(1 - \frac{\lambda_3}{\lambda_{\nn_2} }  (h_2)^2 \right) + r_2 h_2 h_2 '' + r_2 (r_2 - 1) (h_2')^2 + r_1 r_2 h_2 h_2' \frac{h_1'}{h_1}
+			\end{cases}
+	\]
+	we get
+	\[
+		\tau_{\mm}= -   r_2 \frac{(h_2)''}{h_2} - 2 r_1 \frac{(h_1)''}{h_1} + \frac{\tau_{\nn_1} }{(h_1)^2} - r_1 (r_1 - 1) \frac{(h_1')^2}{(h_1)^2} 
+	\]
+        \end{demm}
+	 
+	 }
+	
+\end{teorema}
 
 
 
@@ -747,7 +836,7 @@ Aqui $\V$ denotará um espaço vetorial de dimensãoi finita.
   $$2 \cdot (T \KN S)(x, y, z, w) = T(y, z) S(x, w) - T(x, z) S(y, w)  + S(y, z) T(x, w) - S(x, z) T(y, w), \ \forall x,y, z, w.$$
   \end{deff}
 
-  \begin{deff}
+  \begin{deff}\label{DefWeyl}
   O tensor de Weyl é o tensor $W$ determinado pela decomposição do tensor curvatura da seguinte maneira
   $$\Rm = \frac{R}{n(n-1)} (g \KN g) + \frac{2}{n-2} (g \KN E) + W.$$ 
   \end{deff}
@@ -836,6 +925,162 @@ e para $i \geq 1$, $\sigma_i : \nn \to \mm_i$ é a aplicação definida por
     Dado $X_i \in \Gamma(T \nn_i)$, é fácil ver que existe um único campo $\text{Lev}(X_i) \in \mathcal{L}(\nn_i) $ que satisfaz $\left( \dd \sigma_i \circ \text{Lev} \right)(X_i) = X_i$. O campo $\text{Lev}(X_i)$ é chamado do levantamento do campo $X_i$. O abuso de notação de identificar um campo ou uma $1$-forma com seu levantamento é portanto inofensivo.
     \end{oobs}
 
+    \begin{lema}\label{refg}
+        \textit{
+        Seja $(\mm^n, g)$ uma variedade Riemanniana e $p \in \mm$ um ponto arbitrariamente fixado. Então existe uma vizinhança $U_p \ni p$ e um referencial local $\{E_i\}_{1 \leq i \leq n} \subset \Gamma(TU_p)$ que satisfaz
+        \[
+        g(E_i(q), E_j(q)) = \delta_{ij} \ \forall q \in U_p, \text{ e } \nabla_{E_i(p)} E_j = 0
+        \]
+        para quaisquer $1 \leq i, j \leq n$.}
+        \end{lema}
+
+        \begin{demm}
+            Consulte \mycitep{MinhaDissertacao}.
+        \end{demm}
+
+        \begin{namedthm}{Identidade}[\textbf{Primeira identidade de Bianchi}]
+            \[
+            \Rm(x, y)z + \Rm(z, x)y + \Rm(y, z)x = 0, \ \forall x, y, z \in T_p \mm \text{ e } \forall p \in \mm
+            \]
+            \end{namedthm}
+            \begin{namedthm}{Identidade}[\textbf{Segunda identidade de Bianchi}]
+            \[
+            (\nabla_z \Rm)(x, y)w + (\nabla_x \Rm)(y, z)w + (\nabla_y \Rm)(z, x)w = 0 \ \forall x, y, z, w \in T_p \mm \text{ e } \forall p \in \mm
+            \]
+            \end{namedthm}
+            Estas duas identidades implicam na
+            \begin{namedthm}{Identidade}[\textbf{Segunda identidade de Bianchi contraída}]
+            \begin{equation}\label{segbianchi}
+            2 \cdot \divv(\Ric) = \nabla \Scal
+            \end{equation}
+            \end{namedthm}
+
+    \begin{lema}\label{divrm}
+        \[
+       (\divv \Rm)(x, y, z)= (\nabla_x \Ric)(y, z) - (\nabla_ y \Ric)(x, z), \ \forall x, y, z \in T_p \mm \text{ e } \forall p \in \mm \] 
+       \end{lema}
+       \begin{demm}
+       Seja $\{E_i \}_{1 \leq i \leq n}$ um referencial geodésico centrado em torno de $p$ (com $E_i(p) \doteq \be_i$) e suponhamos sem perda de generalidade  que $0 = \nabla_{v} x = \nabla_{v} y = \nabla_v z$ seja qual for $v \in T_p \mm$. Temos então
+       \[\begin{aligned}
+       - (\divv \Rm)(x, y, z) &= - \sum_{1 \leq i \leq n} \langle (\nabla_{\be_i} \Rm)(x, y, z), \be_i \rangle \\
+       &= \sum_{1 \leq i \leq n} \left[ g \left( (\nabla_x \Rm)(y, \be_i, z), \be_i \right) +  g \left( (\nabla_y \Rm)(\be_i, x, z), \be_i \right)\right] \\
+       &= \tr((\nabla_x \Rm)(y, \bullet, z)) + \tr((\nabla_y \Rm)(\bullet, x, z)) \\
+       &= -(\nabla_x \Ric)(y, z) + (\nabla_y \Ric)(x, z)
+       \end{aligned}
+       \]
+       onde na segunda igualdade usamos a segunda identidade de Bianchi e na última usamos o fato de $\nabla$ comutar com o traço.
+       \end{demm}
+
+       \begin{deff}
+        Definimos a derivada covariante exterior $\dd^{\nabla} T$ de um $2$-tensor $T \in \T^0_2(T \mm)$ por
+        \[
+        (\dd^{\nabla} T)(X, Y, Z) = (\nabla_X T)(Y, Z) - (\nabla_Y T)(X, Z), \ \forall X, Y, Z \in \Gamma(T \mm)
+        \]
+        \end{deff}
+        \begin{deff}
+        Se $\alpha \in \Gamma(T^{*} \mm)$ e $\beta \in \T^0_2(T \mm)$, denotaremos por $\alpha \wedge \beta$ a aplicação determinada por
+        \[
+        (\alpha \wedge \beta)(X, Y, Z) = \alpha(X) \beta(Y, Z) - \alpha(Y) \beta(X, Z), \ \forall X, Y, Z \in \Gamma(T \mm)
+        \]
+        \end{deff} 
+        
+        \begin{oobs}
+        Se $T, S \in \T^0_2(T \mm)$, é trivial (usando um referencial geodésico) verificar a igualdade
+        \[
+        \nabla_X (T \KN S) = (\nabla_X T) \KN S + T \KN (\nabla_X S), \ \forall X, Y, Z \in \Gamma(T \mm)
+        \]
+        \end{oobs}
+        
+        \begin{lema}\label{div(fT)}
+        Se $T \in \T^0_2(T \mm)$ e $f \in \mathscr{C}^{\infty}(\mm)$, então $\delta(fT) = T(\bullet, \nabla f) + f \cdot \delta(T)$. 
+        \end{lema}
+        
+        \begin{demm}
+       Basta provarmos que
+        \[
+        (\delta(fT))_i = T(\partial_i, \nabla f) + (f  \delta(T))_i
+        \]
+        De fato, em coordenadas locais temos (usando a convenção da notação de Einstein):
+        \[ \begin{aligned}
+        (\delta(fT))_i &= (fT)_{ij;}{}^j \\
+        &=(fT_{ij})_{;}^j \\
+        &= f^{;j} T_{ij} + f \cdot T_{ij;}{}^j \\
+        &= T(\partial_i, (\be^j)^{\sharp}(f) \cdot  \partial_j) + f \cdot (\delta T)_i \\
+        &= T(\partial_i, g^{j \ell} f_{;\ell} \cdot  \partial_{j}) + f \cdot (\delta T)_i \\
+        &= T(\partial_i , (f_{;\ell} \be^{\ell})^{\sharp}) + f \cdot (\delta T)_i \\
+        &=  T(\partial_i, \nabla f) + f \cdot (\delta(T))_i
+        \end{aligned}
+        \]
+        \end{demm}
+        \begin{lema}\label{divKN}
+        Se $S \in \T^0_2(T \mm)$ é um $2$-tensor, então
+        \[
+        2 \div(g \KN S) = (\div S) \wedge g + \dd^{\nabla} S
+        \] 
+        \end{lema}
+        
+        \begin{demm}
+        Em coordenadas locais, temos (usando a convenção da notação de Einstein)
+        \[ \begin{aligned}
+        (2 \delta(g \KN S))_{ijk} &= (2 g \KN S)_{ijk \ell ;}{}^{\ell} \\
+        &= (g_{jk} S_{i \ell} - g_{ik} S_{j \ell} + S_{jk} g_{i \ell} - S_{ik}g_{j \ell})_{;}{}^{\ell} \\
+        &= g_{jk} S_{i \ell ;}{}^{\ell} - g_{ik} S_{j \ell ;}{}^{\ell} + S_{j k ;}{}^{\ell} g_{i \ell} - S_{i k ;}{}^{\ell} g_{j \ell} \\
+        &= g_{jk}(\delta S)_i - g_{ik} (\delta S)_j + S_{jk;i} - S_{ik;j} \\
+        &= (\delta S \wedge g)_{ijk} + (\dd^{\nabla} S)_{ijk} \\
+        &= (\delta S \wedge g + \dd^{\nabla} S)_{ijk}
+        \end{aligned}
+        \]
+        
+        \end{demm}
+        
+        \begin{lema}\label{divGKNG}
+        \[
+        \delta(g \KN g) = 0
+        \]
+        \end{lema}
+        \begin{demm}
+        Consequência imediata da paralelidade de $g$.
+        \end{demm}
+        \begin{lema}\label{DivRmHarmonico} Escrevendo $f = \frac{\Scal}{n(n-1)}$, temos:
+        \begin{equation}\label{EqDivRmHarmonico}
+        \div(\Rm) = (g \KN g)(\bullet, \textcolor{red}{\bullet}, \textcolor{gal}{\bullet}, \nabla f) + \frac{1}{n-2} \cdot \left( \div(E) \wedge g +  \dd^{\nabla} E \right) + \div(W)
+        \end{equation}
+        \end{lema}
+        
+        \begin{demm}
+        Consequência imediata da definição \cref{DefWeyl} juntamente do lema \cref{divKN} e do corolário \cref{divGKNG}.
+        
+        \end{demm}
+        
+        \begin{proposicao}\label{CaractRmHarmonico} Em dimensão $\geq 4$, 
+        \[
+        \Munderbrace{\Rm \text{ é harmônico}}{\iff \nabla^{\ell} R_{ijk\ell} = 0} \iff \Munderbrace{W \text{ é harmônico}}{\iff \nabla^{\ell} W_{ijk \ell} = 0} \text{ e } \Munderbrace{\Scal \text{ é constante} }{\iff \nabla \Scal = 0}
+        \]
+        \end{proposicao}
+        \begin{demm}
+        Suponha que $\Rm$ é harmônico. O lema \cref{divrm} garante então que o tensor de Ricci é de Codazzi, de forma que em um referencial geodésico vale
+        \[ \begin{aligned}
+        \nabla_k \Scal &= \nabla_k\left( \sum_{1 \leq i, j \leq 4} g^{ij} \Ric_{ij} \right) \\
+        &= \sum_{1 \leq i, j \leq 4} g^{ij} (\nabla_k \Ric)_{ij}  \\
+        &= \sum_{1 \leq i, j \leq 4} g^{ij} (\nabla_i \Ric)_{kj} \\
+        &= \frac{1}{2} (\div(\Ric))_k \\
+        &= \frac{1}{2} \nabla_k \Scal
+        \end{aligned}
+        \]
+        seja qual for $1 \leq k \leq n$, onde na penúltima igualdade usamos a identidade \cref{segbianchi}. Logo $\nabla \Scal = 0$, e portanto $\Scal$ é constante. Consequentemente, segue da identidade \cref{segbianchi} que a equação \cref{EqDivRmHarmonico} se escreve como
+        \begin{equation}\label{0=Div(Rm)}
+        0 = \div(\Rm) = \frac{1}{n-2} \cdot \dd^{\nabla} \Ric + \div(W)
+        \end{equation}
+        Mas pelo lema \cref{divrm}, $\div(\Rm) = 0 \iff \dd^{\nabla} \Ric = 0$. Portanto, segue da equação \cref{0=Div(Rm)} que $W$ é harmônico. \par 
+        Reciprocamente, se $W$ é harmônico e $\Scal$ é constante, segue imediatamente da identidade \cref{segbianchi}, do lema \cref{divrm} e da equação \cref{EqDivRmHarmonico} que
+        \[
+        \div(\Rm) = \frac{\dd^{\nabla} \Ric}{n-2} = \frac{\div(\Rm)}{n-2} \iff \frac{n-3}{n-2} \div(\Rm) = 0 \iff \div(\Rm) = 0
+        \]
+        e portanto $\Rm$ é harmônico.
+        \end{demm}
+
+      
+
 \begin{thebibliography}{9}
 
 {\bfseries
@@ -867,10 +1112,16 @@ e para $i \geq 1$, $\sigma_i : \nn \to \mm_i$ é a aplicação definida por
 Ricci gradiente quadridimensionais}. Dissertação de Mestrado, Universidade de Brasília, 2023. Disponível em: \href{https://sagangromov.github.io/assets/pdf/OneChart.pdf}{\textbf{https://sagangromov.github.io/assets/pdf/MinhaDissertacao.pdf}}. 
 }
 
-\bibitem{MinhaDissertacao}
+\bibitem{provaWarped}
 \bl{
-\textbf{Horácio, M.A.R.M.} \emph{Produtos warped}. \\ Disponível em: \href{https://sagangromov.github.io/assets/pdf/OneChart.pdf}{\textbf{https://sagangromov.github.io/assets/pdf/ProdutosWarped1.pdf}}. 
+\textbf{Horácio, M.A.R.M.} \emph{Produtos warped}. \\ Disponível em: \href{https://sagangromov.github.io/assets/pdf/OneChart.pdf}{\textbf{https://sagangromov.zgithub.io/assets/pdf/ProdutosWarped1.pdf}}. 
 }
+
+\bibitem{passeio}
+\bl{
+\textbf{Horácio, M.A.R.M.} \emph{Produtos warped}. \\ Disponível em: \href{https://sagangromov.github.io/assets/pdf/OneChart.pdf}{\textbf{https://sagangromov.github.io/assets/pdf/passeio.pdf}}. 
+}
+
 
 
 
@@ -896,9 +1147,20 @@ Ricci gradiente quadridimensionais}. Dissertação de Mestrado, Universidade de 
 \bl{
 \textbf{Brozos-Vázquez, M.; García-Río, E.; Vázquez-Lorenzo, R.} Warped product metrics and locally conformally flat structures. \emph{Mat. Contemp.} 28 (2005), 91--110. \href{http://www.ams.org/mathscinet-getitem?mr=2195191}{\bf{MR2195191.}}
 }
+
 \bibitem{BryantOverflow}
-\bl{{MathOverflow;} \href{https://mathoverflow.net/q/433698/119418}{\textbf{What are some explicit examples of nontrivial gradient almost Ricci solitons with harmonic curvature?}}
+\bl{{MathOverflow;} \href{https://mathoverflow.net/q/433698/119418}{\textbf{What are some explicit examples of nontrivial gradient almost Ricci solitons with harmonic curvature?}} Disponível em:\\ \href{https://mathoverflow.net/q/433698/119418}{\textbf{https://mathoverflow.net/q/433698/119418}}. 
 }
+
+
+
+\bibitem{DensoOverflow}
+\bl{{MathOverflow;} \href{https://mathoverflow.net/q/433698/119418}{\textbf{Why is this subset associated to a 2-tensor dense?}} Disponível em:\\ \href{https://mathoverflow.net/questions/453659/why-is-this-subset-associated-to-a-2-tensor-dense
+}{\textbf{https://mathoverflow.net/questions/453659/why-is-this-subset-associated-to-a-2-tensor-dense
+}}. 
+}
+
+
 
 \bibitem{KillT}
 \bl{          

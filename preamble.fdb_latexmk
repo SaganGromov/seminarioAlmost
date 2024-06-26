@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1719290447.8195 "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/preamble.tex" "preamble.pdf" "preamble" 1719290448.65166 2
+["pdflatex"] 1719369868.69964 "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/preamble.tex" "preamble.pdf" "preamble" 1719369869.53077 2
   "C:/Users/mathe/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1715234380 24225045 8c2112a3c962a04ba05f9b6f9fdaf363 ""
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
@@ -155,9 +155,9 @@
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/tex/latex/totcount/totcount.sty" 1296125748 6013 486f8b9b567dcfc1437aed4344eff39b ""
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/mathe/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/preamble.tex" 1719290446 9717 bf4ff0c31a5c870d6bb9cb0b197ea50c ""
-  "preamble.aux" 0 -1 0 "pdflatex"
-  "preamble.tex" 1719290446 9717 bf4ff0c31a5c870d6bb9cb0b197ea50c ""
+  "c:/Users/mathe/Downloads/textosTEX/Meus textos/seminario-Almost/preamble.tex" 1719369867 9997 9817aa64cb065861fa79964ba62d1112 ""
+  "preamble.aux" 1719369868 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "preamble.tex" 1719369867 9997 9817aa64cb065861fa79964ba62d1112 ""
   (generated)
   "preamble.aux"
   "preamble.log"

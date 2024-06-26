@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.9)  25 JUN 2024 01:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.5.9)  25 JUN 2024 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -713,7 +713,9 @@ File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks53
 \c@AM@survey=\count349
 \AM@templatesizebox=\box73
-))
+)
+\c@thm=\count350
+)
 ! Emergency stop.
 <*> .../Meus textos/seminario-Almost/preamble.tex"
                                                   
@@ -721,10 +723,10 @@ File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
 
  
 Here is how much of TeX's memory you used:
- 25091 strings out of 474486
- 468030 string characters out of 5743756
+ 25108 strings out of 474486
+ 468235 string characters out of 5743756
  1924542 words of memory out of 5000000
- 46959 multiletter control sequences out of 15000+600000
+ 46976 multiletter control sequences out of 15000+600000
  559131 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,0n,93p,455b,104s stack positions out of 10000i,1000n,20000p,200000b,200000s
